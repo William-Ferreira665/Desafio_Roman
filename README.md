@@ -1,6 +1,6 @@
 # Desafio Roman
 
-A aplicação Roman se trata de uma plataforma para sugestão de projetos. Idealizada no âmbito escolar, para facilitar a geração de ideias para criação de projetos.
+A aplicação Roman se trata de uma plataforma para sugestão de projetos, idealizada no âmbito escolar para facilitar a geração de ideias para criação de projetos.
 
 ## Funcionalidades do projeto 🛠
 
