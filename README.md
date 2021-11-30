@@ -6,7 +6,7 @@ A aplicação Roman se trata de uma plataforma para sugestão de projetos, ideal
 
 - Adicionar diferentes temas para filtrar as ideias
 
-## Técnicas e tecnologias ✔️
+## Tecnologias 💻
 
 **Veja abaixo o que utilizamos nesse projeto**:
 - API: Conjunto de rotinas e padrões de programação para acesso a um aplicativo de software ou plataforma baseado na Web, sendo no nosso projeto feita com C#.
@@ -16,7 +16,16 @@ A aplicação Roman se trata de uma plataforma para sugestão de projetos, ideal
 - JavaScript: Linguagem de programação utilizada na construção do front-end da aplicação Web.
 - NodeJs: Executa códigos JavaScript fora de um navegador web
 - React: Biblioteca JavaScript de código aberto com foco em criar interfaces de usuário.
-- Html e CSS: Usados para estilizar a aplicação Web.
+- Android App: Emulador de dispositivo móvel que reproduz as funções do software.
+
+
+##Como executar? 
+-É necessário que a API esteja em execução com a devida string de conexão do Banco de Dados;
+- Visto isso, para criar o projeto react-native é preciso abrir o CMD (Prompt de Comando) dentro da pasta desejada e executar os seguintes comandos:
+    npx react-native init novoProjeto
+    npm i  (para trazer alguma dependência de pacotes já instalados)
+    npx react-native run-android (para rodar a aplicação)
+   -É importante frisar a configuração e possível mudança do número do ip da máquina na API (caso não saiba, execute ipconfig no CMD)
 
 &nbsp;
 &nbsp;
