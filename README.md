@@ -22,10 +22,10 @@ A aplicação Roman se trata de uma plataforma para sugestão de projetos, ideal
 ##Como executar? 
 -É necessário que a API esteja em execução com a devida string de conexão do Banco de Dados;
 - Visto isso, para criar o projeto react-native é preciso abrir o CMD (Prompt de Comando) dentro da pasta desejada e executar os seguintes comandos:
-    npx react-native init novoProjeto
-    npm i  (para trazer alguma dependência de pacotes já instalados)
-    npx react-native run-android (para rodar a aplicação)
-   -É importante frisar a configuração e possível mudança do número do ip da máquina na API (caso não saiba, execute ipconfig no CMD)
+    - npx react-native init novoProjeto
+    - npm i  (para trazer alguma dependência de pacotes já instalados)
+    - npx react-native run-android (para rodar a aplicação)
+    -É importante frisar a configuração e possível mudança do número do ip da máquina na API (caso não saiba, execute ipconfig no CMD) e caso se dê por necessário a instalação de pacotes, pare a execução do projeto e depois rode novamente.
 
 &nbsp;
 &nbsp;
