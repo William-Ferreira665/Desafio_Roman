@@ -19,8 +19,8 @@ A aplicação Roman se trata de uma plataforma para sugestão de projetos, ideal
 - Android App: Emulador de dispositivo móvel que reproduz as funções do software.
 
 
-##Como executar? 
--É necessário que a API esteja em execução com a devida string de conexão do Banco de Dados;
+## Como executar? 
+- É necessário que a API esteja em execução com a devida string de conexão do Banco de Dados;
 - Visto isso, para criar o projeto react-native é preciso abrir o CMD (Prompt de Comando) dentro da pasta desejada e executar os seguintes comandos:
     - npx react-native init novoProjeto
     - npm i  (para trazer alguma dependência de pacotes já instalados)
