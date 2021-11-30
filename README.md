@@ -25,7 +25,7 @@ A aplicação Roman se trata de uma plataforma para sugestão de projetos, ideal
     - npx react-native init novoProjeto
     - npm install <pacote> (para instalar um ou mais pacotes)
     - npx react-native run-android (para rodar a aplicação)
-- É importante frisar a configuração e possível mudança do número do ip da máquina na API (caso não saiba, execute ipconfig no CMD) e caso se dê por necessário a instalação de pacotes, pare a execução do projeto e depois rode novamente.
+- É importante frisar a configuração e possível mudança do número do ip da máquina na API (caso não saiba, execute ipconfig no CMD e pegue o valor de IPv4) e caso se dê por necessário a instalação de pacotes, pare a execução do projeto e depois rode novamente.
 - Caso um projeto seja importado é preciso executar
     - npm i  (para trazer alguma dependência de pacotes já instalados)
 
