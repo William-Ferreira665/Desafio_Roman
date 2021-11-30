@@ -19,7 +19,8 @@
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,
-      "applicationUrl": "http://192.168.3.158",
+      //mudar ip
+      "applicationUrl": "http://192.168.3.253:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

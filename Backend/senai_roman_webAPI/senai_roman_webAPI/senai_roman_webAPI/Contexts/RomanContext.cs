@@ -27,8 +27,18 @@ namespace senai_roman_webAPI.Contexts
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("Data Source=NOTE0113F3\\SQLEXPRESS; initial catalog=ROMAN; user Id=sa; pwd=Senai@132;");
+//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+
+
+                //WILLIAM
+                //optionsBuilder.UseSqlServer("Data Source=NOTE0113F3\\SQLEXPRESS; initial catalog=ROMAN; user Id=sa; pwd=Senai@132;");
+
+
+                //ANGELO
+                //optionsBuilder.UseSqlServer("Data Source=NOTE0113I3\\SQLEXPRESS; initial catalog=ROMAN; user Id=sa; pwd=Senai@132;");
+
+                //ANNY
+                optionsBuilder.UseSqlServer("Data Source=DESKTOP-9K54HD5\\SQLEXPRESS; initial catalog=ROMAN; user Id=sa; pwd=senai@132;");
             }
         }
 
