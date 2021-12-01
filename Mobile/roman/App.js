@@ -9,6 +9,8 @@ import {StatusBar, StyleSheet} from 'react-native';
 
 import Main from './src/telas/main';
 import Login from './src/telas/login';
+import Cadastro from './src/telas/cadastroProjetos';
+
 //import CameraPerfil from './src/screens/camera';
 
 const AuthStack = createStackNavigator();
