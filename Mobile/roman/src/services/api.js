@@ -6,7 +6,7 @@ const api = axios.create({
 
   //MUDAR IP
   //COMANDO - CMD: ipconfig - IPv4
-  baseURL: 'http://192.168.3.253:5000/api',
+  baseURL: 'http://192.168.3.253:80/api',
 });
 
 // define o padrão de exportação

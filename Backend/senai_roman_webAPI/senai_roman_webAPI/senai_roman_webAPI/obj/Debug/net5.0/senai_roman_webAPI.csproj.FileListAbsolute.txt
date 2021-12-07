@@ -127,7 +127,6 @@ C:\Users\45597675800\Documents\SENAI DM\Projeto_Roman\Backend\senai_roman_webAPI
 C:\Users\45597675800\Documents\SENAI DM\Projeto_Roman\Backend\senai_roman_webAPI\senai_roman_webAPI\senai_roman_webAPI\obj\Debug\net5.0\senai_roman_webAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\45597675800\Documents\SENAI DM\Projeto_Roman\Backend\senai_roman_webAPI\senai_roman_webAPI\senai_roman_webAPI\obj\Debug\net5.0\senai_roman_webAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\45597675800\Documents\SENAI DM\Projeto_Roman\Backend\senai_roman_webAPI\senai_roman_webAPI\senai_roman_webAPI\obj\Debug\net5.0\staticwebassets\senai_roman_webAPI.StaticWebAssets.Manifest.cache
-C:\Users\45597675800\Documents\SENAI DM\Projeto_Roman\Backend\senai_roman_webAPI\senai_roman_webAPI\senai_roman_webAPI\obj\Debug\net5.0\staticwebassets\senai_roman_webAPI.StaticWebAssets.xml
 C:\Users\45597675800\Documents\SENAI DM\Projeto_Roman\Backend\senai_roman_webAPI\senai_roman_webAPI\senai_roman_webAPI\obj\Debug\net5.0\scopedcss\bundle\senai_roman_webAPI.styles.css
 C:\Users\45597675800\Documents\SENAI DM\Projeto_Roman\Backend\senai_roman_webAPI\senai_roman_webAPI\senai_roman_webAPI\obj\Debug\net5.0\senai_roman_webAPI.RazorTargetAssemblyInfo.cache
 C:\Users\45597675800\Documents\SENAI DM\Projeto_Roman\Backend\senai_roman_webAPI\senai_roman_webAPI\senai_roman_webAPI\obj\Debug\net5.0\senai_roman_webAPI.dll

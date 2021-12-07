@@ -7528,19 +7528,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\49674286810\\.nuget\\packages\\": {}
+    "C:\\Users\\45597675800\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\49674286810\\Desktop\\Desafio_Roman\\Backend\\senai_roman_webAPI\\senai_roman_webAPI\\senai_roman_webAPI\\senai_roman_webAPI.csproj",
+      "projectUniqueName": "C:\\Users\\45597675800\\Documents\\SENAI DM\\Projeto_Roman\\Backend\\senai_roman_webAPI\\senai_roman_webAPI\\senai_roman_webAPI\\senai_roman_webAPI.csproj",
       "projectName": "senai_roman_webAPI",
-      "projectPath": "C:\\Users\\49674286810\\Desktop\\Desafio_Roman\\Backend\\senai_roman_webAPI\\senai_roman_webAPI\\senai_roman_webAPI\\senai_roman_webAPI.csproj",
-      "packagesPath": "C:\\Users\\49674286810\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\49674286810\\Desktop\\Desafio_Roman\\Backend\\senai_roman_webAPI\\senai_roman_webAPI\\senai_roman_webAPI\\obj\\",
+      "projectPath": "C:\\Users\\45597675800\\Documents\\SENAI DM\\Projeto_Roman\\Backend\\senai_roman_webAPI\\senai_roman_webAPI\\senai_roman_webAPI\\senai_roman_webAPI.csproj",
+      "packagesPath": "C:\\Users\\45597675800\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\45597675800\\Documents\\SENAI DM\\Projeto_Roman\\Backend\\senai_roman_webAPI\\senai_roman_webAPI\\senai_roman_webAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\49674286810\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\45597675800\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7607,6 +7607,12 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[5.0.12, 5.0.12]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -7615,7 +7621,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

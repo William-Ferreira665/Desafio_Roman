@@ -6,9 +6,12 @@ import {
     View,
 } from 'react-native';
 
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+
 const bottomTab = createBottomTabNavigator();
 
 import Login from './login';
+import Cadastro from './cadastroProjetos';
 
 //importar perfil, cadastro e listagem
 
@@ -33,7 +36,7 @@ export default class Main extends Component {
                 <View style={styles.navigation}>
                     <bottomTab.Navigator
                     //LISTAGEM
-                    // initialRouteName='Eventos'
+                    initialRouteName='Cadastro'
 
                     screenOptions={({route}) => ({
                         tabBarIcon: () => {
@@ -47,7 +50,7 @@ export default class Main extends Component {
                                   )
                             }
                             //Projetos-cadastro
-                            if (route.name === 'Projetos') {
+                            if (route.name === 'Cadastro') {
                                 return(
                                     <Image
                                       source={require('../imagens/mais.png')}
@@ -72,7 +75,7 @@ export default class Main extends Component {
                     })}
 
                     >
-                    {/* <bottomTab.Screen name="Perfil" component={Perfil} /> */}
+                    <bottomTab.Screen name="Cadastro" component={Cadastro} />
                     </bottomTab.Navigator>
                 </View>
             </ImageBackground>

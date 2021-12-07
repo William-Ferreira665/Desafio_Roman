@@ -31,10 +31,10 @@ namespace senai_roman_webAPI.Contexts
 
 
                 //WILLIAM
-                optionsBuilder.UseSqlServer("Data Source=NOTE0113F3\\SQLEXPRESS; initial catalog=ROMAN; user Id=sa; pwd=Senai@132;");
+                //optionsBuilder.UseSqlServer("Data Source=NOTE0113F3\\SQLEXPRESS; initial catalog=ROMAN; user Id=sa; pwd=Senai@132;");
 
                 //ANGELO
-                optionsBuilder.UseSqlServer("Data Source=NOTE0113I3\\SQLEXPRESS; initial catalog=ROMAN; user Id=sa; pwd=Senai@132;");
+                //optionsBuilder.UseSqlServer("Data Source=NOTE0113I3\\SQLEXPRESS; initial catalog=ROMAN; user Id=sa; pwd=Senai@132;");
 
                 //ANNY
                 optionsBuilder.UseSqlServer("Data Source=DESKTOP-9K54HD5\\SQLEXPRESS; initial catalog=ROMAN; user Id=sa; pwd=senai@132;");

@@ -20,11 +20,8 @@
       "dotnetRunMessages": "true",
       "launchBrowser": true,
       //mudar ip
-<<<<<<< HEAD
-      "applicationUrl": "http://192.168.3.179",
-=======
-      "applicationUrl": "http://192.168.4.55:5000",
->>>>>>> a6e0a5d978715c7fec20b6474c73b404e1f036af
+      "applicationUrl": "http://192.168.3.253",
+      //"applicationUrl": "http://192.168.4.55:5000",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

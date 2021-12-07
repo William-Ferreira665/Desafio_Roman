@@ -24,8 +24,8 @@ export default class Cadastro extends Component {
                 justifyContent: 'center',
                 alignItems: 'flex-start',
             }}>
-                <ImageBackground source={require("../imagens/fundo_cadastro")}>
-                    <Image source={require("../imagens/capelo")}></Image>
+                <ImageBackground source={require("../imagens/fundo_cadastro.png")}>
+                    <Image source={require("../imagens/capelo.png")}></Image>
                 </ImageBackground>
                 </View>
 
