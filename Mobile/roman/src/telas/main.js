@@ -86,15 +86,15 @@ export default class Main extends Component {
 const styles = StyleSheet.create({
     navigation: {
         flex: 1,
-        alignItems: 'center'
+        // alignItems: 'center'
     },
 
-    iconeNavigationListar:{
+    // iconeNavigationListar:{
 
-    },
+    // },
 
-    iconeNavigationCadastrar: {},
+    // iconeNavigationCadastrar: {},
 
-    iconeSair: {}
+    // iconeSair: {}
 
 });

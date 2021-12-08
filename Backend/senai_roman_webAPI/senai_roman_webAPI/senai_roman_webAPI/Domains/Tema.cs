@@ -12,8 +12,8 @@ namespace senai_roman_webAPI.Domains
             Projetos = new HashSet<Projeto>();
         }
 
-        public byte IdTema { get; set; }
-        public string NomeTema { get; set; }
+        public int IdTema { get; set; }
+        public string TituloTema { get; set; }
 
         public virtual ICollection<Projeto> Projetos { get; set; }
     }

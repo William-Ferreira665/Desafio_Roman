@@ -27,16 +27,7 @@ namespace senai_roman_webAPI.Contexts
         {
             if (!optionsBuilder.IsConfigured)
             {
-//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-
-
-                //WILLIAM
-                //optionsBuilder.UseSqlServer("Data Source=NOTE0113F3\\SQLEXPRESS; initial catalog=ROMAN; user Id=sa; pwd=Senai@132;");
-
-                //ANGELO
-                //optionsBuilder.UseSqlServer("Data Source=NOTE0113I3\\SQLEXPRESS; initial catalog=ROMAN; user Id=sa; pwd=Senai@132;");
-
-                //ANNY
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
                 optionsBuilder.UseSqlServer("Data Source=DESKTOP-9K54HD5\\SQLEXPRESS; initial catalog=ROMAN; user Id=sa; pwd=senai@132;");
             }
         }
@@ -48,107 +39,109 @@ namespace senai_roman_webAPI.Contexts
             modelBuilder.Entity<Projeto>(entity =>
             {
                 entity.HasKey(e => e.IdProjeto)
-                    .HasName("PK__Projeto__8FCCED7647935791");
+                    .HasName("PK__projeto__8FCCED763D242750");
 
-                entity.ToTable("Projeto");
+                entity.ToTable("projeto");
 
-                entity.Property(e => e.IdProjeto)
-                    .ValueGeneratedOnAdd()
-                    .HasColumnName("idProjeto");
+                entity.Property(e => e.IdProjeto).HasColumnName("idProjeto");
 
-                entity.Property(e => e.DescricaoProjeto)
-                    .HasMaxLength(256)
+                entity.Property(e => e.Descricao)
+                    .HasMaxLength(350)
                     .IsUnicode(false)
-                    .HasColumnName("descricaoProjeto");
+                    .HasColumnName("descricao");
 
                 entity.Property(e => e.IdTema).HasColumnName("idTema");
 
+                entity.Property(e => e.IdUsuario).HasColumnName("idUsuario");
+
                 entity.Property(e => e.NomeProjeto)
                     .IsRequired()
-                    .HasMaxLength(50)
+                    .HasMaxLength(40)
                     .IsUnicode(false)
                     .HasColumnName("nomeProjeto");
 
                 entity.HasOne(d => d.IdTemaNavigation)
                     .WithMany(p => p.Projetos)
                     .HasForeignKey(d => d.IdTema)
-                    .HasConstraintName("FK__Projeto__idTema__3E52440B");
+                    .HasConstraintName("FK__projeto__idTema__4316F928");
+
+                entity.HasOne(d => d.IdUsuarioNavigation)
+                    .WithMany(p => p.Projetos)
+                    .HasForeignKey(d => d.IdUsuario)
+                    .HasConstraintName("FK__projeto__idUsuar__440B1D61");
             });
 
             modelBuilder.Entity<Tema>(entity =>
             {
                 entity.HasKey(e => e.IdTema)
-                    .HasName("PK__Tema__BCD9EB486587AB5A");
+                    .HasName("PK__tema__BCD9EB4898D60182");
 
-                entity.ToTable("Tema");
+                entity.ToTable("tema");
 
-                entity.Property(e => e.IdTema)
-                    .ValueGeneratedOnAdd()
-                    .HasColumnName("idTema");
+                entity.Property(e => e.IdTema).HasColumnName("idTema");
 
-                entity.Property(e => e.NomeTema)
+                entity.Property(e => e.TituloTema)
                     .IsRequired()
-                    .HasMaxLength(20)
+                    .HasMaxLength(30)
                     .IsUnicode(false)
-                    .HasColumnName("nomeTema");
+                    .HasColumnName("tituloTema");
             });
 
             modelBuilder.Entity<TipoUsuario>(entity =>
             {
                 entity.HasKey(e => e.IdTipoUsuario)
-                    .HasName("PK__TipoUsua__03006BFFA673DE16");
+                    .HasName("PK__tipoUsua__03006BFF656ECA35");
 
-                entity.ToTable("TipoUsuario");
+                entity.ToTable("tipoUsuario");
 
-                entity.Property(e => e.IdTipoUsuario)
-                    .ValueGeneratedOnAdd()
-                    .HasColumnName("idTipoUsuario");
+                entity.HasIndex(e => e.TituloTipoUsuario, "UQ__tipoUsua__C6B29FC3AC76FE2F")
+                    .IsUnique();
 
-                entity.Property(e => e.TituloUsuario)
+                entity.Property(e => e.IdTipoUsuario).HasColumnName("idTipoUsuario");
+
+                entity.Property(e => e.TituloTipoUsuario)
                     .IsRequired()
-                    .HasMaxLength(14)
+                    .HasMaxLength(20)
                     .IsUnicode(false)
-                    .HasColumnName("tituloUsuario");
+                    .HasColumnName("tituloTipoUsuario");
             });
 
             modelBuilder.Entity<Usuario>(entity =>
             {
                 entity.HasKey(e => e.IdUsuario)
-                    .HasName("PK__Usuario__645723A68884DD58");
+                    .HasName("PK__usuario__645723A6E286B6F3");
 
-                entity.ToTable("Usuario");
+                entity.ToTable("usuario");
 
-                entity.HasIndex(e => e.EmailUsuario, "UQ__Usuario__ACC1DD99C6F54084")
+                entity.HasIndex(e => e.Email, "UQ__usuario__AB6E61648F90917E")
                     .IsUnique();
 
-                entity.Property(e => e.IdUsuario)
-                    .ValueGeneratedOnAdd()
-                    .HasColumnName("idUsuario");
+                entity.Property(e => e.IdUsuario).HasColumnName("idUsuario");
 
-                entity.Property(e => e.EmailUsuario)
+                entity.Property(e => e.Email)
                     .IsRequired()
-                    .HasMaxLength(256)
+                    .HasMaxLength(200)
                     .IsUnicode(false)
-                    .HasColumnName("emailUsuario");
+                    .HasColumnName("email");
 
                 entity.Property(e => e.IdTipoUsuario).HasColumnName("idTipoUsuario");
 
                 entity.Property(e => e.NomeUsuario)
                     .IsRequired()
-                    .HasMaxLength(50)
+                    .HasMaxLength(30)
                     .IsUnicode(false)
                     .HasColumnName("nomeUsuario");
 
-                entity.Property(e => e.SenhaUsuario)
+                entity.Property(e => e.Senha)
                     .IsRequired()
-                    .HasMaxLength(13)
+                    .HasMaxLength(15)
                     .IsUnicode(false)
-                    .HasColumnName("senhaUsuario");
+                    .HasColumnName("senha");
 
                 entity.HasOne(d => d.IdTipoUsuarioNavigation)
                     .WithMany(p => p.Usuarios)
                     .HasForeignKey(d => d.IdTipoUsuario)
-                    .HasConstraintName("FK__Usuario__idTipoU__398D8EEE");
+                    .HasConstraintName("FK__usuario__idTipoU__3A81B327");
             });
 
             OnModelCreatingPartial(modelBuilder);

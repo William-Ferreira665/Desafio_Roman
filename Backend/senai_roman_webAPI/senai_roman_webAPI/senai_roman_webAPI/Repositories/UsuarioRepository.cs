@@ -13,7 +13,7 @@ namespace senai_roman_webAPI.Repositories
         RomanContext ctx = new RomanContext();
         public Usuario Login(string email, string senha)
         {
-            return ctx.Usuarios.FirstOrDefault(u => u.EmailUsuario == email && u.SenhaUsuario == senha);
+            return ctx.Usuarios.FirstOrDefault(u => u.Email == email && u.Senha == senha);
         }
     }
 }

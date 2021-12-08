@@ -1,4 +1,4 @@
-import AsyncStorageLib from '@react-native-async-storage/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import React, { Component } from 'react';
 import {
     Image,
@@ -31,8 +31,8 @@ export default class Cadastro extends Component {
 
                 <View style={{
                     flex: 1,
-                    justifyContent: center,
-                    alignItems: center,
+                    justifyContent: 'center',
+                    alignItems: 'center',
                 }}>
                      <TextInput style={styles.inputCadastro}
                             placeholder="Nome do projeto"

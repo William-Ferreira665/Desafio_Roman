@@ -45,7 +45,7 @@ namespace senai_spmed_webAPI.Controllers
 
                 var minhasClaims = new[]
                 {
-                    new Claim(JwtRegisteredClaimNames.Email, UsuarioBuscado.EmailUsuario),
+                    new Claim(JwtRegisteredClaimNames.Email, UsuarioBuscado.Email),
                     new Claim(JwtRegisteredClaimNames.Jti, UsuarioBuscado.IdUsuario.ToString()),
                     new Claim(ClaimTypes.Role, UsuarioBuscado.IdTipoUsuario.ToString()),
 

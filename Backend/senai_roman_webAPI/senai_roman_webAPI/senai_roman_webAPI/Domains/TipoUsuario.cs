@@ -9,12 +9,14 @@ namespace senai_roman_webAPI.Domains
     {
         public TipoUsuario()
         {
+            Projetos = new HashSet<Projeto>();
             Usuarios = new HashSet<Usuario>();
         }
 
-        public byte IdTipoUsuario { get; set; }
-        public string TituloUsuario { get; set; }
+        public int IdTipoUsuario { get; set; }
+        public string TituloTipoUsuario { get; set; }
 
+        public virtual ICollection<Projeto> Projetos { get; set; }
         public virtual ICollection<Usuario> Usuarios { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-import AsyncStorageLib from '@react-native-async-storage/async-storage';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import React, { Component } from 'react';
 import {
     Image,
@@ -25,7 +25,7 @@ export default class Login extends Component {
 
     login = async () => {
 
-        const resposta = await api.post('/login',
+        const resposta = await api.post('/Login',
         {
             email: this.state.email, 
             senha: this.state.senha
@@ -34,7 +34,7 @@ export default class Login extends Component {
         const token = resposta.data.token;
         await AsyncStorage.setItem('userToken', token);
 
-        if (resposta.data.status === 200) {
+        if (resposta.status === 200) {
             this.props.navigation.navigate('Main');
         }
 
